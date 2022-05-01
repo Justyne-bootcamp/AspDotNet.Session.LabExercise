@@ -1,0 +1,15 @@
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\bin\Debug\net5.0\Session.Data.deps.json
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\bin\Debug\net5.0\Session.Data.runtimeconfig.json
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\bin\Debug\net5.0\Session.Data.runtimeconfig.dev.json
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\bin\Debug\net5.0\Session.Data.dll
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\bin\Debug\net5.0\Session.Data.pdb
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.csproj.AssemblyReference.cache
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.AssemblyInfoInputs.cache
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.AssemblyInfo.cs
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.csproj.CoreCompileInputs.cache
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.dll
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\refint\Session.Data.dll
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.pdb
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\Session.Data.genruntimeconfig.cache
+C:\Users\justyne.nam-ay\Documents\backend\DotNet\AspDotNet.Session.LabExercise\Session.Data\obj\Debug\net5.0\ref\Session.Data.dll

@@ -1,0 +1,9 @@
+﻿
+<div class="text-center">
+    <form asp-action="Login" asp-controller="Home" method="post">
+        Username: <input type="text" name="username" value="user" />
+        Password: <input type="text" name="password" value="123" />
+        <input type="submit" value="submit" />
+    </form>
+</div>
+@ViewBag.errorMsg

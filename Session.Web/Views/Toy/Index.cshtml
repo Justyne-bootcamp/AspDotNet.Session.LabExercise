@@ -1,0 +1,61 @@
+﻿@using Session.Data.Models;
+@using Session.Web.Models;
+@model PagedResult<Toy>;
+@{
+
+}
+<h3>Toys Available</h3>
+<div>
+    <form asp-action="Index" asp-controller="Toy" method="post">
+        <table cellpadding=10 cellspacing=10 class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Toy Name</td>
+                    <td>Toy Description</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var toy in Model.Results)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(model => toy.CToyId)</td>
+                        <td>@Html.DisplayFor(model => toy.VToyName)</td>
+                        <td>@Html.DisplayFor(model => toy.VToyDescription)</td>
+                        <td>@Html.DisplayFor(model => toy.MToyRate)</td>
+                        <td>@Html.DisplayFor(model => toy.SiToyQoh)</td>
+                        <td><a href="@Url.Action("Add", "Cart", new { id=toy.CToyId })">Add to Cart</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                @for (int pageIndex = 1; pageIndex <= Model.PageCount; pageIndex++)
+                {
+
+                    @if (pageIndex != Model.CurrentPage)
+                    {
+
+                        <li class="page-item"><a class="page-link" href="javascript:pagerClick(@pageIndex);">@pageIndex</a></li>
+                    }
+                    else
+                    {
+                        <li class="page-item active">
+                            <a class="page-link" href="#">@pageIndex <span class="sr-only">(current)</span></a>
+                        </li>
+                    }
+                }
+            </ul>
+        </nav>
+        <input type="hidden" id="currentPage" name="currentPage" />
+    </form>
+</div>
+<script type="text/javascript">
+    function pagerClick(index) {
+        document.getElementById("currentPage").value = index;
+        document.forms[0].submit();
+    }
+</script>

@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using Session.Web.Extensions;
+
+@{
+    var cart = Context.Session.GetObject<List<Item>>("cart");
+}
+
+<h3>My Cart</h3>
+
+@if (cart.Any())
+{
+
+    <table cellpadding=10 cellspacing=10 class="table table-striped">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Toy Name</td>
+                <td>Toy Description</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var toy in cart)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(model => toy.Toy.CToyId)</td>
+                    <td>@Html.DisplayFor(model => toy.Toy.VToyName)</td>
+                    <td>@Html.DisplayFor(model => toy.Toy.VToyDescription)</td>
+                    <td>@Html.DisplayFor(model => toy.Toy.MToyRate)</td>
+                    <td>@Html.DisplayFor(model => toy.Quantity)</td>
+                    <td>@Html.DisplayFor(model => toy.TotalPrice)</td>
+                    <td>@Html.ActionLink("Delete", "Delete", new { id=toy.Toy.CToyId })</td>
+                </tr>
+            }
+        </tbody>
+</table>
+}
+else{
+    <p>No Item in the cart</p>
+}
+<a href="@Url.Action("Index", "Toy")">SHOP At</a>
